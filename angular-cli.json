@@ -43,6 +43,20 @@
       "project": "e2e/tsconfig.json"
     }
   ],
+  "assets": [
+    "assets",
+    "favicon.ico",
+    {
+      "glob": "index.js",
+      "input": "./server/",
+      "output": "./"
+    },
+    {
+      "glob": "package.json",
+      "input": "./server/",
+      "output": "./"
+    }
+  ],
   "test": {
     "karma": {
       "config": "./karma.conf.js"
